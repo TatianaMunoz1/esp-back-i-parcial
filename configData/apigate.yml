@@ -10,11 +10,11 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: msplaylist
+        - id: msmovie
           uri: lb://api-playlist
           predicates:
             - Path=/api/v1/playlists/**
-        - id: msmusic
+        - id: mscatalog
           uri: lb://api-music
           predicates:
             - Path=/api/v1/musics/**
@@ -25,7 +25,7 @@ info:
 
 eureka:
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     fetchRegistry: true
     serviceURL:
       defaultZone: http://localhost:8761/eureka
