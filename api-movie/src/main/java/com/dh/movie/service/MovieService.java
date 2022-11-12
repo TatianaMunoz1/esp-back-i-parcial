@@ -1,7 +1,7 @@
 package com.dh.movie.service;
 
 
-import com.dh.movie.model.Movie;
+import com.dh.movie.model.Movie2;
 import com.dh.movie.repository.MovieRepository;
 import org.springframework.stereotype.Service;
 
@@ -17,11 +17,12 @@ public class MovieService {
         this.movieRepository = movieRepository;
     }
 
-    public List<Movie> findByGenre(String genre) {
+    public List<Movie2> findByGenre(String genre) {
         return movieRepository.findByGenre(genre);
     }
 
-    public Movie save(Movie movie) {
+
+    public Movie2 save(Movie2 movie) {
         return movieRepository.save(movie);
     }
 }

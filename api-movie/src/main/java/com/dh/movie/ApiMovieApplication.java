@@ -1,6 +1,8 @@
 package com.dh.movie;
 
-import com.dh.movie.model.Movie;
+
+import com.dh.movie.model.Movie2;
+
 import com.dh.movie.repository.MovieRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -25,10 +27,10 @@ public class ApiMovieApplication {
                 return;
             }
 
-            repository.save(new Movie(null, "Pelicula 1", "Terror", "www.netflix.com"));
-            repository.save(new Movie(null, "Pelicula 2", "Terror", "www.netflix.com"));
-            repository.save(new Movie(null, "Pelicula 3", "Comedia", "www.netflix.com"));
-            repository.save(new Movie(null, "Pelicula 4", "Ficcion", "www.netflix.com"));
+            repository.save(new Movie2(null, "Pelicula 1", "Terror", "www.netflix.com"));
+            repository.save(new Movie2(null, "Pelicula 2", "Terror", "www.netflix.com"));
+            repository.save(new Movie2(null, "Pelicula 3", "Comedia", "www.netflix.com"));
+            repository.save(new Movie2(null, "Pelicula 4", "Ficcion", "www.netflix.com"));
         };
     }
 
