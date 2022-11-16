@@ -1,9 +1,0 @@
-# curl -i http://localhost:8080/api/v1/catalog/terror
-GET http://localhost:8080/api/v1/catalog/terror
-
-<> 2022-11-11T034553.200.json
-<> 2022-11-11T034513.200.json
-<> 2022-11-11T034505.200.json
-
-###
-
